@@ -1,0 +1,9 @@
+public class callout_mocks_for_Trello {
+    public static void setMock(String staticResourceName){
+    	StaticResourceCalloutMock myMock = new StaticResourceCalloutMock();
+        myMock.setStaticResource(staticResourceName);
+        myMock.setStatusCode(200);
+        myMock.setHeader('Content-Type', 'application/json;charset=UTF-8');
+        test.setMock(HttpCalloutMock.class, myMock);
+    }
+}

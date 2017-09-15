@@ -1,0 +1,9 @@
+put this on account->buttons
+type 'onclick javascript'
+
+{!REQUIRESCRIPT("/soap/ajax/29.0/connection.js")}
+{!REQUIRESCRIPT("/soap/ajax/29.0/apex.js")}
+var result = sforce.apex.execute("TrelloTasks.Trello","btnRefreshTrello", {});
+alert('running trello task refresh process. check tasks in a few seconds');
+
+window.location.reload();

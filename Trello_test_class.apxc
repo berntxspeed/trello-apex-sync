@@ -1,0 +1,8 @@
+@isTest(SeeAllData=true)
+public class Trello_test_class {
+    static testMethod void refreshTrello() {
+        Test.startTest();
+        Trello.refreshTrello();
+        Test.stopTest();
+    }
+}

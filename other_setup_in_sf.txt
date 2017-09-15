@@ -1,0 +1,41 @@
+Create custom object TrelloTaskConfig
+fields:
+  API_Endpoint__c (Text 255)
+  API_Key__c (Text 255)
+  API_Token__c (Text 255)
+  API_Username__c (Text 255)
+  Zero_here_for_the_one_you_want_to_use (number default 0 unique)
+
+
+Record Type on Activity
+name Trello
+
+Custom Field on Activity (only for Tasks, not Events)
+name Trello_Card_ID__c (Text 255)
+
+Button on Account page: Refresh Trello
+
+Add button to Account page layout
+
+Add remote site
+name Trello
+url https://api.trello.com
+
+
+/////create first TrelloTaskConfig record with Trello API Creds
+username berntgudmestad2
+key c353aea012edca7d1b850ab522153e17
+token c1b894c6885fd7defa3cf07b8eeb41d2273d762fde8e088ec8aea5fe6c64a6df
+name Master
+Zero_here_for_the_one_you_want_to_use 0
+
+
+
+/////////SF app security review resources:
+Secure Cloud Dev Site: http://wiki.developerforce.com/page/Security
+Security Review Documentation: http://wiki.developerforce.com/page/Security_Review
+Requirements Checklist: http://wiki.developerforce.com/index.php/Requirements_Checklist
+OWASP Top Ten Checklist: https://www.owasp.org/index.php/Top_10_2010-Main
+Force.com Security Code Scanner: http://security.force.com/sourcescanner
+Web Application Scan: http://security.force.com/webappscanner
+OWASP Testing Guide: https://www.owasp.org/index.php/OWASP_Testing_Guide_v3_Table_of_Contents
